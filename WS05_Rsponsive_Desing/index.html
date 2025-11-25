@@ -1,113 +1,110 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>My First HTML Page</title>
-        <style>
-        h1 {
-            color: green;
-        }
-    </style>
-    </head>
-    <body>
-        <header>
-        <h1 style="color: rgb(28, 106, 0);">Welcome to my Page</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <nav class="responsive-nav">
-            <button class="menu-toggle">☰ Menu</button>
-            <ul class="nav-list">
-                <li><a href="#">Home </a></li>
-                <li><a href="#">About </a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </header>
+<header>
+    <section id="top"></section>
+    <h1>Tervetuloa sivuilleni!</h1>
+    <p>Olen Miro, IT-Tradenomi opiskelija!</p>
+    <img src="pic/Picture 1.jpg" alt="Kuva minusta" class="profile"> <br>
+    <img src="pic/Picture 1.jpg" alt="Responsive Image" class="responsive-image">
+</header>
 
-        <main>
-            <section id="About">
-        <p>Hello! My name is Miro, and I’m currently studying computer science and business at Laurea University of Applied Sciences. I’m interested in technology, web development, and learning how digital tools can make everyday life easier. In my free time, I enjoy playing video games, spending time with friends, and watching football. I’m always curious to learn new things and improve my skills.</p>
-        <img src="pic/Picture 1.jpg" alt="Miro">
-        <h2>Hobbies</h2>
-        <ol>
-            <li>Gym</li>
-            <li>Watching sports</li>
-            <li>Video games</li>
-        </ol>
-            </section>
-        </main>
-        <a href="https://www.laurea.fi">Visit Laurea</a>
-        <table>
-    <tr>
-        <th>Courses</th>
-        <th>Done</th>
-    </tr>
-    <tr>
-        <td>ICT-infrastruktuurin ja pilvipalveluiden perusteet</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <td>Digitaalisen palvelun perusteet</td>
-        <td>Yes</td>
-    </tr>
-    </table>
-    <p></p>
-    <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <input type="submit" value="Submit">
-    </form>
-    
-    <button class="transition-button">Hover me</button>
-    <div class="animation-box"></div>
-    <ul class="psuedo-list">
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
+<nav>
+    <ul>
+        <li><a id="navi" href="#harrastukset">Harrastukset</a></li>
+        <li><a id="navi" href="#opinnot">Opinnot</a></li>
+        <li><a id="navi" href="#yhteys">Yhteystiedot</a></li>
     </ul>
-    <img src="pic/Picture 1.jpg" alt="Sample Image" class="filter-image">
+</nav>
 
-   <blockquote class="quote">
-    This is a sample quote.
-   </blockquote>
 
-   <div class="flex-container">
-    <div class="box">Box 1</div>
-    <div class="box">Box 2</div>
-    <div class="box">Box 3</div>
-   </div>
+<section id="harrastukset">
+    <h2>Harrastukseni</h2>
+    <ul>
+        <li>Videopelit</li>
+        <li>Urheilun seuraaminen</li>
+        <li>Sali</li>
+        <li>Teknologian ja bisneksen opiskelu</li>
+    </ul>
+</section>
 
-   <div class="grid-container">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-    <div class="grid-item">4</div>
-    <div class="grid-item">5</div>
-    <div class="grid-item">6</div>
-   </div>
+<section id="opinnot">
+    <h2>Opintoni</h2>
+    <table>
+        <tr>
+            <th>Kurssi</th>
+            <th>Tila</th>
+        </tr>
+        <tr>
+            <td>Digitaalisen palvelun perusteet</td>
+            <td>Valmis</td>
+        </tr>
+        <tr>
+            <td>Asiantuntijaviestintä ja projektityö</td>
+            <td>Valmis</td>
+        </tr>
+        <tr>
+            <td>ICT-infrastruktuurin ja pilvipalveluiden perusteet</td>
+            <td>Valmis</td>
+        </tr>
+        <tr>
+            <td>Professional Communication in English</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>Websivustojen kehittäminen</td>
+            <td>Käynnissä</td>
+        </tr>
+        <tr>
+            <td>Liiketoimintaympäristöt</td>
+            <td>Käynnissä</td>
+        </tr>
+    </table>
+</section>
 
-   <div class="responsive-box">Resize the window to see the effect</div>
+<section id="yhteys">
+    <h2>Yhteydenottolomake</h2>
+    <form action="#" method="post">
+        <label>Nimi:</label>
+        <input type="text" name="nimi">
 
-   <div class="responsive-container">
-    <div class="column">Column 1</div>
-    <div class="column">Column 2</div>
-   </div>
+        <label>Sähköposti:</label>
+        <input type="email" name="email">
 
-<img src="pic/Picture 1.jpg" alt="Responsive Image" class="responsive-image">
+        <label>Viesti:</label>
+        <textarea name="viesti"></textarea>
 
-<div class="media-query-box">Resize the window to see the effect</div>
+        <button type="submit">Lähetä</button>
+    </form>
+</section>
 
-   <footer>
-    <p>Copyright 2025</p>
-   </footer>
-    </body>
-    </html>
+<div class="responsive-container">
+      <div class="column">Column 1</div>
+      <div class="column">Column 2</div>
+    </div>
+
+    <nav class="responsive-nav">
+        <button class="menu-toggle">☰ Valikko</button>
+        <ul class="nav-list">
+            <li><a href="#harrastukset">Harrastukset</a></li>
+            <li><a href="#opinnot">Opinnot</a></li>
+            <li><a href="#yhteys">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+
+<footer>
+    <a href="#top" class="back-to-top">Back to the top</a>
+    <p>&copy; 2025 Miro Heino @ Laurea. All rights reserved.</p>
+    <div class="media-query-box">Resize the window to see the effect</div>
+</footer>
+
+</body>
+</html>
+
+
